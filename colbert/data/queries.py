@@ -63,13 +63,16 @@ class Queries:
                 assert qa['qid'] not in self.data
                 self.data[qa['qid']] = qa['question']
                 self._qas[qa['qid']] = qa
-
+        print("data")
+        print(self.data)
         return self.data
 
     def qas(self):
         return dict(self._qas)
 
     def __getitem__(self, key):
+        print("data:", self.data)
+        print("key:", key)
         return self.data[key]
 
     def keys(self):
