@@ -21,11 +21,13 @@ class Examples:
         return self.provenance()
 
     def _load_file(self, path):
+        print("path:", path)
         nway = self.nway + 1 if self.nway else self.nway
         examples = []
 
         with open(path) as f:
             for line in f:
+                print("line:", line)
                 example = ujson.loads(line)[:nway]
                 examples.append(example)
 

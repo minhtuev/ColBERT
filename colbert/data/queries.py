@@ -71,7 +71,9 @@ class Queries:
         return dict(self._qas)
 
     def __getitem__(self, key):
-        print("data:", self.data)
+        print("data:", len(self.data))
+        print("data keys:", list(self.data.keys())[:10])
+        print("data values:", list(self.data.values())[:10])
         print("key:", key)
         return self.data[key]
 

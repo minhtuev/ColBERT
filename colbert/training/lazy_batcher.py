@@ -44,6 +44,8 @@ class LazyBatcher():
         all_queries, all_passages, all_scores = [], [], []
 
         for position in range(offset, endpos):
+            print("position:", position)
+            print("query, Pids:", self.triples[position])
             query, *pids = self.triples[position]
             pids = pids[:self.nway]
 
