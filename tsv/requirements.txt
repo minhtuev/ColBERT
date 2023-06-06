@@ -1,0 +1,12 @@
+bitarray
+datasets
+gitpython
+ninja
+scipy
+spacy
+tqdm
+transformers
+ujson
+flask
+python-dotenv
+
